@@ -1,28 +1,37 @@
-# <Your product name>
+# DeviceDossier
 
-> Fill this top section from your Examate project card on Day 1. Replace every line in angle brackets.
+> AI-powered regulatory compliance assistant for Indian CDSCO Medical Devices Rules (MDR-2017) and Software as a Medical Device (SaMD) guidelines.
 
 ## Problem
-<3–5 sentences: who struggles with what today, and what your product changes.>
+
+Indian MedTech startups, medical device manufacturers, and regulatory affairs professionals struggle to navigate the complex web of Central Drugs Standard Control Organisation (CDSCO) Medical Devices Rules, 2017 (MDR-2017). Determining risk-based device classifications (Class A to D), identifying applicable licensing forms (e.g., MD-7, MD-8, MD-14), distinguishing wellness software from regulated Software as a Medical Device (SaMD), and verifying testing standards requires sifting through hundreds of pages of gazette notifications and FAQs. DeviceDossier changes this by providing an intelligent compliance assistant that delivers verifiable answers grounded with exact document and page citations.
 
 ## Who it is for
-<One or two real user types, for example "compliance officer at a gold-loan NBFC in Coimbatore".>
+
+1. Regulatory Affairs (RA) Specialists and QA Managers at Indian medical technology manufacturers and health-tech AI startups in hubs like Bengaluru, Hyderabad, and Pune.
+2. Biomedical Compliance Consultants preparing license applications and dossier submissions on the CDSCO Sugam portal.
 
 ## Signature feature
-<One sentence: the feature only your product has.>
+
+Multi-tier regulatory classification and licensing roadmap generator that maps product claims to CDSCO risk classes (Class A–D), required statutory forms, and QMS standards (ISO 13485 / IEC 62304) with exact page-level citations.
 
 ## Hardest problem (my interview story)
-<In your own words, from your project card.>
+
+Resolving subtle boundary classifications for AI and standalone software (SaMD)—where differences in clinical intended use (e.g., wellness tracking vs. automated triage of intracranial hemorrhage) determine whether an algorithm is exempt or requires Class C/D central licensing with mandatory clinical performance evaluations—without hallucinating regulatory requirements.
 
 ## Dataset
+
 | Source | Link | Documents | Pages | Licence / terms |
-|---|---|---|---|---|
-| <name> | <url> | <n> | <n> | <licence> |
+| ------ | ---- | --------- | ----- | --------------- |
+| CDSCO Medical Devices Division | https://cdsco.gov.in | 4 | 165 | Open Government Data / Public Domain (Govt. of India) |
+
 
 ## 10 real questions
+
 See [docs/QUESTIONS.md](docs/QUESTIONS.md).
 
 ## Run it
+
 ```bash
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements-dev.txt
@@ -32,4 +41,5 @@ curl localhost:8000/health
 ```
 
 ## Live link
+
 <Added in Week 2>
